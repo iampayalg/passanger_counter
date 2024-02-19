@@ -1,0 +1,25 @@
+// initialize count as 0 
+// listen for click and increase the count variable when button clicked
+let saveEl = document.getElementById("save-el")
+let countEl = document.getElementById("count-el")
+
+console.log(saveEl)
+
+let count = 0 
+
+function increment() {
+    //body of the function increment
+    count += 1
+    countEl.textContent = count
+}
+
+function save() {
+    //body of save function 
+    let countStr = count + " - "
+    saveEl.textContent += countStr
+    countEl.textContent = 0
+    count = 0
+}
+console.log("Let's count people on the subway!")
+ 
+
